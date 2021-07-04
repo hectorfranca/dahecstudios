@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    }
+html {
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    }
+header {
+    width: 100%;
+    height: 12%;
+    transition: all 200ms ease-in;
+    background-color: black;
+    }
+.titulo a {
+    float: left;
+    color: white;
+    font-family: 'Changa', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none; 
+    padding: 20px 0 0 10px;
+    }
+nav {
+    height: 100%;
+    }
+#btmenu {
+    display: none;
+    }
+.menupainel {
+    height: 100%;
+    }
+.menupainel ul {
+    height: 100%;
+    margin-left: 300px;
+    }
+.menupainel ul li {
+    height: 100%;
+    display: inline-block;
+    margin-right: 30px;
+    }
+.menupainel ul li a {
+    height: 99%;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    }
+.menupainel p {
+    padding-top: 30px;
+}
+.menupainel #navjogos {
+    width: 130%;
+    }
+.menupainel #navquemsomos {
+    width: 110%;
+    }
+.menupainel #navcontato {
+    width: 120%;
+    }
+.menupainel a:hover {
+    border-bottom: 2px solid rgb(230, 0, 0);
+    }
+.natalmagico {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 3px;
+    color: rgb(238, 238, 238);
+    }
+.titulonm {
+    text-align: center;
+    font-size: 1.5em;
+    }
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    }
+article {
+    margin: 50px 0 0 10px;
+    text-align: left;
+    }
+footer {
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    background-color:   black;
+    }
+footer p{
+    padding-top: 30px;
+    font-family: 'Changa', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    }
+
+@media only screen and (max-width: 600px) {
+
+    #btmenu {
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 40px;
+        right: 20px;
+        top: 20px;
+        z-index: 2;
+        background-image: url("menubutton.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        }
+    @keyframes animbutton {
+        from { 
+            transform: rotate(0deg); 
+            }
+        to { 
+            transform: rotate(360deg);
+            background-image: url('xmenu.png');
+            background-repeat: no-repeat;
+            background-size: 85% 75%;
+            background-position: center;
+            }  
+        } 
+    nav {
+        height: auto;
+        width: 100%;
+        }
+    .menupainel {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        z-index: 1;
+        background-color: black;
+        border-left: solid 1px rgb(37, 37, 37);
+        transition: all 300ms ease-out;
+        }
+    .menupainel ul {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 80px;
+        }
+    .menupainel ul li {
+        height: auto;
+        width: 100%;
+        display: block;
+        margin-right: 0;
+        }
+    .menupainel ul li a {
+        height: 50px;
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.8em;
+        text-align: center;
+        }
+    .menupainel p {
+        padding-top: 15px;
+    }
+    .menupainel #navjogos {
+        width: 100%;
+        }
+    .menupainel #navquemsomos {
+        width: 100%;
+        }
+    .menupainel #navcontato {
+        width: 100%;
+        }
+    .menupainel a:hover {
+        border-bottom: none;
+        }
+    .titulonm {
+        font-size: 30px;
+        }
+    article {
+        font-size: 20px;
+        }
+    }
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) and (orientation: portrait) {
+
+    html {
+        font-size: 100%;
+        }
+    .menupainel #navquemsomos {
+        width: 130px;
+        }
+    .menupainel ul {
+        margin-left: 350px;
+        }
+    .menupainel a:hover {
+        border-bottom: none;
+        }
+    .menupainel p {
+        padding-top: 40px;
+        }
+    .titulonm {
+        font-size: 50px;
+        }
+    article {
+        font-size: 30px;
+        }
+    }

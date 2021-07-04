@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site demonstrativo da desenvolvedora Dahec Studios.">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,Games,Developer,Desenvolvimento,Jogos,WarofStraws,
+    NatalMagico,DahecStudios,Unity,Construct,Deselvolvedora,JogosDigitais,JogosEletronicos">
+    <meta name="author" content="Héctor França">
+    <link rel="icon" href="dahecicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+    <title>Dahec Studios</title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1><a href="index.html">DAHEC STUDIOS</a></h1>
+        </div>
+        <nav>
+            <div id="btmenu" onclick="ToggleMenu();"></div>
+            <div class="menupainel" style="left: 100%;">
+                <ul>
+                    <li> <a id="navjogos" href="#"><p>JOGOS</p></a> </li>
+                    <li> <a id="navquemsomos" href="#"><p>QUEM SOMOS</p></a> </li>
+                    <li> <a id="navcontato" href="#"><p>CONTATO</p></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="paineljogos">
+        <div class="painelwarofstraws">
+            <div class="fundowos"></div>
+            <button id="wosjogarbutton" type="button" onclick="JogarWos();">JOGAR</button>
+        </div>
+        <div class="painelnatalmagico">
+            <div class="fundonm"></div>
+            <button id="nmjogarbutton" type="button" onclick="JogarNM();">JOGAR</button>
+        </div>
+    </div>
+    <footer>
+        <p>By Héctor França</p>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="indexscript.js"></script>
+</html>
